@@ -2,32 +2,13 @@ import React, { Component } from 'react';
 
 
 class Counter extends Component {
-    /*state = {
-        value: this.props.counter.value
-        //imageUrl: "https://picsum.photos/200",
-            names:[
-            "Franz",
-            "Immah",
-            "Nancie"
-        ] 
-    };*/
-
- //onClick={ () => this.incrementHandler(product)} <----add an arg to an event handler?
- //(arrow function + call the method/function with a param)
-
-    
-   /* incrementHandler = () => {
-        this.setState({value: this.state.value + 1})
-    }; */
+    /
     
     renderNames(){
        // if(this.state.names.length === 0) return <p>"No names"</p>;
         return <ul>{this.state.names.map( name => <li key={name}>{name}</li>)}</ul>;
         
-        /* TO RENDER
-        {this.state.names.length === 0 && "Empty, please add names."}
-        {this.renderNames()}
-        */ 
+     
     }
     
     render(){
