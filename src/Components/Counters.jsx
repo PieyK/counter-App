@@ -4,12 +4,6 @@ import Counter from "./Counter";
 
 class Counters extends Component {
     
-/*
-Counter props ----> value={counter.value}
-                    id={counter.id}
-Instead of polluting the props space(key&Id are same),
-replace the props with the mapped counter ie counter={counter}
-*/
     render() { 
        const {onReset, counters, onDelete, onIncrement} = this.props;
         
